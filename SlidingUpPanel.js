@@ -373,7 +373,8 @@ class SlidingUpPanel extends React.PureComponent {
       velocity,
       toValue: options.toValue,
       fromValue: animatedValue,
-      friction: this.props.friction
+      friction: this.props.friction,
+      onMomentumEnd: this.props.onMomentumDragEnd
     })
   }
 
